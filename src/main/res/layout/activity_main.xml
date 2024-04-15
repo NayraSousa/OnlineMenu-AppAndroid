@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/total_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/online_menu"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:text="@string/subtitle"
+            android:textColor="@color/entries_name_2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+        <TextView
+            android:id="@+id/text_entries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingTop="65dp"
+            android:text="@string/menu_entries"
+            android:textColor="@color/entries_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <TextView
+            android:id="@+id/text_entries2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/menu_entries_2"
+            android:textColor="@color/entries_name_2"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <ImageView
+            android:id="@+id/image_entries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/entries_name"
+            android:padding="2dp"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <View
+            android:id="@+id/view_entries"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/entries_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/image_entries" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_sign"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_dadinho_tapioca"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries" />
+
+        <CheckBox
+            android:id="@+id/checkbox_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries" />
+
+
+        <TextView
+            android:id="@+id/text_dadinho_tapioca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/entries_1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_title"
+            app:layout_constraintTop_toBottomOf="@id/view_entries" />
+
+        <TextView
+            android:id="@+id/text_time_entries1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_entries1"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/text_dadinho_tapioca" />
+
+        <TextView
+            android:id="@+id/text_quant_dadinho_tapioca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unid_12"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/text_time_entries1" />
+
+        <TextView
+            android:id="@+id/text_warning_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/text_quant_dadinho_tapioca" />
+
+        <TextView
+            android:id="@+id/text_price_dadinho_tapioca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_dadinho_tapioca"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_quant_dadinho_tapioca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/text_dadinho_tapioca" />
+
+        <CheckBox
+            android:id="@+id/checkbox_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries2" />
+
+        <TextView
+            android:id="@+id/text_macaxeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/entries_2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries2" />
+
+        <TextView
+            android:id="@+id/text_time_entries2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_entries1"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_macaxeira"
+            app:layout_constraintTop_toBottomOf="@id/text_macaxeira" />
+
+        <TextView
+            android:id="@+id/text_quant_macaxeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quant_macaxeira"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_macaxeira"
+            app:layout_constraintTop_toBottomOf="@id/text_time_entries2" />
+
+        <TextView
+            android:id="@+id/text_price_macaxeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_macaxeira"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_quant_macaxeira"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <View
+            android:id="@+id/view_entries2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/entries_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_one" />
+
+        <CheckBox
+            android:id="@+id/checkbox_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries3" />
+
+        <TextView
+            android:id="@+id/text_bolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/entries_3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries3" />
+
+
+        <TextView
+            android:id="@+id/text_time_entries3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_entries1"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_bolo"
+            app:layout_constraintTop_toBottomOf="@id/text_bolo" />
+
+        <TextView
+            android:id="@+id/text_quant_bolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quant_bolo"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_bolo"
+            app:layout_constraintTop_toBottomOf="@id/text_time_entries3" />
+
+        <TextView
+            android:id="@+id/text_warning_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_bolo"
+            app:layout_constraintTop_toBottomOf="@id/text_quant_bolo" />
+
+        <TextView
+            android:id="@+id/text_warning_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_gluten"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_bolo"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_two" />
+
+        <TextView
+            android:id="@+id/text_price_bolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_bolo"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_quant_bolo"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <View
+            android:id="@+id/view_entries3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/entries_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_quant_macaxeira" />
+
+        <View
+            android:id="@+id/view_entries4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/entries_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_three" />
+
+        <CheckBox
+            android:id="@+id/checkbox_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries4" />
+
+        <TextView
+            android:id="@+id/text_cuscuz_leite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/entries_4"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries4" />
+
+        <TextView
+            android:id="@+id/text_time_entries4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_entries1"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_cuscuz_leite"
+            app:layout_constraintTop_toBottomOf="@id/text_cuscuz_leite" />
+
+        <TextView
+            android:id="@+id/text_quant_cuscuz_leite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quant_cuscuz_leite"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_cuscuz_leite"
+            app:layout_constraintTop_toBottomOf="@id/text_time_entries4" />
+
+        <TextView
+            android:id="@+id/text_warning_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_cuscuz_leite"
+            app:layout_constraintTop_toBottomOf="@id/text_quant_cuscuz_leite" />
+
+        <TextView
+            android:id="@+id/text_price_cuscuz_leite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_cuscuz_leite"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_quant_cuscuz_leite"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+
+        <ImageView
+            android:id="@+id/image_main_dishes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/main_dishes_name"
+            android:padding="2dp"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_four" />
+
+        <TextView
+            android:id="@+id/text_main_dishes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingTop="65dp"
+            android:text="@string/menu_main_dishes"
+            android:textColor="@color/main_dishes_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_four" />
+
+        <TextView
+            android:id="@+id/text_main_dishes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/menu_main_dishes2"
+            android:textColor="@color/entries_name_2"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/text_main_dishes"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_four" />
+
+        <View
+            android:id="@+id/view_entries5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/main_dishes_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_main_dishes"
+            app:layout_constraintTop_toBottomOf="@id/image_main_dishes" />
+
+        <CheckBox
+            android:id="@+id/checkbox_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_sign"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_maria_bonita"
+            app:layout_constraintEnd_toEndOf="@id/text_price_maria_bonita"
+            app:layout_constraintStart_toStartOf="@id/text_price_maria_bonita"
+            app:layout_constraintTop_toBottomOf="@id/view_entries5" />
+
+        <TextView
+            android:id="@+id/text_maria_bonita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/main_dishes1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries5" />
+
+        <TextView
+            android:id="@+id/text_maria_bonita_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_dishes1_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_maria_bonita"
+            app:layout_constraintTop_toBottomOf="@id/text_maria_bonita" />
+
+        <TextView
+            android:id="@+id/text_time_menu_dishes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_menu_dishes1"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_maria_bonita"
+            app:layout_constraintTop_toBottomOf="@id/text_maria_bonita_composition" />
+
+        <TextView
+            android:id="@+id/text_price_maria_bonita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_maria_bonita"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_time_menu_dishes1"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <TextView
+            android:id="@+id/text_warning_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_maria_bonita"
+            app:layout_constraintTop_toBottomOf="@id/text_time_menu_dishes1" />
+
+        <TextView
+            android:id="@+id/text_warning_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_gluten"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_maria_bonita"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_five" />
+
+        <View
+            android:id="@+id/view_entries6"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/main_dishes_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_six" />
+
+        <CheckBox
+            android:id="@+id/checkbox_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries6" />
+
+        <TextView
+            android:id="@+id/text_arretado_bom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/main_dishes2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries6" />
+
+        <TextView
+            android:id="@+id/text_arretado_bom_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_dishes2_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_arretado_bom"
+            app:layout_constraintTop_toBottomOf="@id/text_arretado_bom" />
+
+        <TextView
+            android:id="@+id/text_time_menu_dishes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_menu_dishes2"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_arretado_bom"
+            app:layout_constraintTop_toBottomOf="@id/text_arretado_bom_composition" />
+
+        <TextView
+            android:id="@+id/text_warning_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_arretado_bom"
+            app:layout_constraintTop_toBottomOf="@id/text_time_menu_dishes2" />
+
+        <TextView
+            android:id="@+id/text_price_arretado_bom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_arretado_bom"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintTop_toTopOf="@id/text_arretado_bom_composition" />
+
+        <View
+            android:id="@+id/view_entries7"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/main_dishes_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_seven" />
+
+        <CheckBox
+            android:id="@+id/checkbox_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries7" />
+
+        <TextView
+            android:id="@+id/text_nordestino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/main_dishes3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries7" />
+
+        <TextView
+            android:id="@+id/text_nordestino_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_dishes3_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_nordestino"
+            app:layout_constraintTop_toBottomOf="@id/text_nordestino" />
+
+        <TextView
+            android:id="@+id/text_time_menu_dishes3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_entries1"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_nordestino"
+            app:layout_constraintTop_toBottomOf="@id/text_nordestino_composition" />
+
+        <TextView
+            android:id="@+id/text_warning_eigth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_nordestino"
+            app:layout_constraintTop_toBottomOf="@id/text_time_menu_dishes3" />
+
+        <TextView
+            android:id="@+id/text_price_nordestino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_nordestino"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintTop_toTopOf="@id/text_nordestino_composition" />
+
+        <View
+            android:id="@+id/view_entries8"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/main_dishes_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_eigth" />
+
+        <CheckBox
+            android:id="@+id/checkbox_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries8" />
+
+        <TextView
+            android:id="@+id/text_amostrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/main_dishes4"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries8" />
+
+        <TextView
+            android:id="@+id/text_amostrado_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_dishes4_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_amostrado"
+            app:layout_constraintTop_toBottomOf="@id/text_amostrado" />
+
+        <TextView
+            android:id="@+id/text_time_menu_dishes4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_menu_dishes2"
+            android:textColor="@color/entries_name_2"
+            app:layout_constraintStart_toStartOf="@id/text_amostrado"
+            app:layout_constraintTop_toBottomOf="@id/text_amostrado_composition" />
+
+        <TextView
+            android:id="@+id/text_warning_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_amostrado"
+            app:layout_constraintTop_toBottomOf="@id/text_time_menu_dishes4" />
+
+        <TextView
+            android:id="@+id/text_price_amostrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_amostrado"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintTop_toTopOf="@id/text_amostrado_composition" />
+
+        <TextView
+            android:id="@+id/text_drinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingTop="65dp"
+            android:text="@string/drinks_name"
+            android:textColor="@color/drinks_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_nine" />
+
+        <View
+            android:id="@+id/view_entries9"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/drinks_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_drinks"
+            app:layout_constraintTop_toBottomOf="@id/image_drinks" />
+
+        <ImageView
+            android:id="@+id/image_drinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/drinks_name"
+            android:padding="2dp"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_nine" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_sign"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_suco"
+            app:layout_constraintEnd_toEndOf="@id/text_price_suco"
+            app:layout_constraintStart_toStartOf="@id/text_price_suco"
+            app:layout_constraintTop_toBottomOf="@id/view_entries9" />
+
+        <TextView
+            android:id="@+id/text_price_suco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_suco"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toTopOf="@id/text_suco_composition" />
+
+        <TextView
+            android:id="@+id/text_suco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/drinks1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries9" />
+
+        <TextView
+            android:id="@+id/text_suco_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/suco_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_suco"
+            app:layout_constraintTop_toBottomOf="@id/text_suco" />
+
+        <TextView
+            android:id="@+id/text_quant_suco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quant_suco"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_suco"
+            app:layout_constraintTop_toBottomOf="@id/text_suco_composition" />
+
+        <View
+            android:id="@+id/view_entries10"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/drinks_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_suco_composition" />
+
+        <TextView
+            android:id="@+id/text_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/drinks2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries10" />
+
+        <TextView
+            android:id="@+id/text_drinks_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/drinks_name2"
+            android:textColor="@color/entries_name_2"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/text_drinks"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_nine" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries10" />
+
+        <TextView
+            android:id="@+id/text_cafe_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_cafe"
+            app:layout_constraintTop_toBottomOf="@id/text_cafe" />
+
+        <TextView
+            android:id="@+id/text_price_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_cafe"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cafe_composition"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <View
+            android:id="@+id/view_entries11"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/drinks_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_cafe_composition" />
+
+        <TextView
+            android:id="@+id/text_vitamina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/drinks3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries11" />
+
+        <CheckBox
+            android:id="@+id/checkbox_eleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries11" />
+
+        <TextView
+            android:id="@+id/text_vitamina_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/vitamina_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_vitamina"
+            app:layout_constraintTop_toBottomOf="@id/text_vitamina" />
+
+        <TextView
+            android:id="@+id/text_price_vitamina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_vitamina"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_vitamina_composition"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <TextView
+            android:id="@+id/text_warning_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_vitamina"
+            app:layout_constraintTop_toBottomOf="@id/text_vitamina_composition" />
+
+        <View
+            android:id="@+id/view_entries12"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/drinks_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_ten" />
+
+        <CheckBox
+            android:id="@+id/checkbox_twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries12" />
+
+        <TextView
+            android:id="@+id/text_refrigerante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/drinks4"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries12" />
+
+        <TextView
+            android:id="@+id/text_refrigerante_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/refrigerante_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_refrigerante"
+            app:layout_constraintTop_toBottomOf="@id/text_refrigerante" />
+
+        <TextView
+            android:id="@+id/text_price_refrigerante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_refrigerante"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_refrigerante_composition"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <ImageView
+            android:id="@+id/image_dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/dessert_name"
+            android:padding="2dp"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_refrigerante_composition" />
+
+        <TextView
+            android:id="@+id/text_dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingTop="65dp"
+            android:text="@string/dessert_name"
+            android:textColor="@color/dessert_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_refrigerante_composition" />
+
+        <View
+            android:id="@+id/view_entries13"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/dessert_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_dessert"
+            app:layout_constraintTop_toBottomOf="@id/image_dessert" />
+
+        <TextView
+            android:id="@+id/text_dessert_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/dessert_name2"
+            android:textColor="@color/entries_name_2"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/text_dessert"
+            app:layout_constraintTop_toBottomOf="@id/text_refrigerante_composition" />
+
+        <TextView
+            android:id="@+id/text_cocada_sorvete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/dessert1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries13" />
+
+        <CheckBox
+            android:id="@+id/checkbox_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries13" />
+
+        <TextView
+            android:id="@+id/text_price_cocada_sorvete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_cocada_sorvete"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cocada_sorvete_composition"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_sign"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/text_cocada_sorvete"
+            app:layout_constraintEnd_toEndOf="@id/text_price_cocada_sorvete"
+            app:layout_constraintStart_toStartOf="@id/text_price_cocada_sorvete"
+            app:layout_constraintTop_toBottomOf="@id/view_entries13" />
+
+        <TextView
+            android:id="@+id/text_cocada_sorvete_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cocada_sorvete_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_cocada_sorvete"
+            app:layout_constraintTop_toBottomOf="@id/text_cocada_sorvete" />
+
+        <TextView
+            android:id="@+id/text_warning_eleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_cocada_sorvete"
+            app:layout_constraintTop_toBottomOf="@id/text_cocada_sorvete_composition" />
+
+        <View
+            android:id="@+id/view_entries14"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/dessert_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_eleven" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fourteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries14" />
+
+        <TextView
+            android:id="@+id/text_canjica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/dessert2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries14" />
+
+        <TextView
+            android:id="@+id/text_canjica_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/canjica_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_canjica"
+            app:layout_constraintTop_toBottomOf="@id/text_canjica" />
+
+        <TextView
+            android:id="@+id/text_warning_twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_canjica"
+            app:layout_constraintTop_toBottomOf="@id/text_canjica_composition" />
+
+        <TextView
+            android:id="@+id/text_price_canjica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_canjica"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_canjica_composition"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <View
+            android:id="@+id/view_entries15"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/dessert_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_twelve" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries15" />
+
+        <TextView
+            android:id="@+id/text_mousse_maracuja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/dessert3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries15" />
+
+
+        <TextView
+            android:id="@+id/text_warning_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_mousse_maracuja"
+            app:layout_constraintTop_toBottomOf="@id/text_mousse_maracuja" />
+
+        <TextView
+            android:id="@+id/text_price_mousse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_mousse"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_mousse_maracuja"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <View
+            android:id="@+id/view_entries16"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/dessert_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_entries"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_thirteen" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sixteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/text_entries"
+            app:layout_constraintStart_toStartOf="@id/text_entries"
+            app:layout_constraintTop_toBottomOf="@id/view_entries16" />
+
+        <TextView
+            android:id="@+id/text_sorvete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/dessert4"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_dadinho_tapioca"
+            app:layout_constraintTop_toBottomOf="@id/view_entries16" />
+
+        <TextView
+            android:id="@+id/text_sorvete_composition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sorvete_composition"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_sorvete"
+            app:layout_constraintTop_toBottomOf="@id/text_sorvete" />
+
+        <TextView
+            android:id="@+id/text_warning_fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contains_lactose"
+            android:textColor="@color/entries_name_2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_sorvete"
+            app:layout_constraintTop_toBottomOf="@id/text_sorvete_composition" />
+
+        <TextView
+            android:id="@+id/text_price_sorvete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_sorvete"
+            android:textColor="@color/color_price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_sorvete_composition"
+            app:layout_constraintEnd_toEndOf="@id/text_price_dadinho_tapioca"
+            app:layout_constraintStart_toStartOf="@id/text_price_dadinho_tapioca" />
+
+        <TextView
+            android:id="@+id/text_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/price_total"
+            android:textColor="@color/color_price"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_warning_fifteen" />
+
+        <EditText
+            android:id="@+id/text_observation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="#FFF"
+            android:hint="@string/observation"
+            android:inputType="text"
+            android:padding="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_price_total" />
+
+
+        <Button
+            android:id="@+id/button_finalizar_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:layout_marginBottom="35dp"
+            android:text="@string/realizar_pedido"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_calcular"
+            app:layout_constraintTop_toBottomOf="@id/text_observation" />
+
+        <Button
+            android:id="@+id/button_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:layout_marginBottom="35dp"
+            android:paddingStart="45dp"
+            android:paddingEnd="45dp"
+            android:text="@string/calcular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_finalizar_pedido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_observation" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+
+
+

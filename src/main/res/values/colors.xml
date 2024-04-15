@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="title_color">#C33405</color>
+    <color name="title_background">#F8D5D4</color>
+    <color name="total_background">#EDECDA</color>
+    <color name="entries_name">#2B872F</color>
+    <color name="entries_name_2">#707470</color>
+    <color name="color_price">#4D61D0</color>
+    <color name="main_dishes_name">#60116D</color>
+    <color name="drinks_name">#3A1307</color>
+    <color name="dessert_name">#EA98B4</color>
+</resources>
